@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <!-- Pink Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-pink">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">Music Player</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Music Player Container -->
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <h4 class="title" id="title">Arbys Music</h4>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+      <audio src=""></audio>
+      <audio src="./assets/iNspo.wav" controls=""></audio>
+      <div class="img-container">
+        <img src="./assets/music.jpeg" alt="music-cover" id="cover" />
+      </div>
+
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fa fa-backward" aria-hidden="true"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fa fa-forward" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container text-center">
+        <div class="social-icons">
+          <a
+            href="https://github.com/Arbythecoder"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+          <a
+            href="https://twitter.com/arbysbodyorg__"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/afolabi-abigeal-4b1604137/"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+        <p class="footer-text">© 2023 ArbyTheCoder</p>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
